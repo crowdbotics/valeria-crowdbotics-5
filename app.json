@@ -1,0 +1,16 @@
+
+{
+  "name": "valeria-crowdbotics-5",
+  "description": "This is repository for django app with functions for django twitter web",
+  "repository": "https://github.com/crowdbotics/valeria-crowdbotics-5",
+  "keywords": ['django'],
+  "env": {
+    "DEBUG_COLLECTSTATIC": "1" 
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "scripts": {
+    "postdeploy": "python manage.py migrate --noinput"
+  }
+}
